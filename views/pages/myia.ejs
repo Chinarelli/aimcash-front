@@ -1,0 +1,97 @@
+<body>
+
+  <% include ../partials/sidebar %>
+
+  <div class="main-content">
+
+    <% include ../partials/navbar %>
+    <% include ../partials/profile/header %>
+
+    <div class="container-fluid mt--7">
+      <div class="row">
+        <div class="col-xl-12 order-xl-1">
+          <div class="card bg-secondary shadow">
+            <div class="card-header bg-white border-0">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">Preparar</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="pl-lg-4">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <button class="btn btn-danger btn-block mt-4 mb-4 fa fa-vial" id="preparar"> Preparar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-xl-12 order-xl-1">
+          <div class="card bg-secondary shadow">
+            <div class="card-header bg-white border-0">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">Treinar</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="pl-lg-4">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <button class="btn btn-danger btn-block mt-4 mb-4 fa fa-brain" id="treinar"> Treinar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+          <div class="col-xl-12 order-xl-1">
+            <div class="card bg-secondary shadow">
+              <div class="card-header bg-white border-0">
+                <div class="row align-items-center">
+                  <div class="col-8">
+                    <h3 class="mb-0">Testar</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-lg-12">
+                        <label class="form-control-label" for="produto">Produto</label>
+                        <input type="text" class="form-control form-control-alternative" name="produto" placeholder="Produto" id="produto">
+                    </div>
+
+                    <div class="col-lg-3">
+                      <button class="btn btn-danger btn-block mt-4 mb-4 fa fa-check" id="testar"> Testar</button>
+                    </div>
+
+                    <div class="col-lg-9 mt-4">
+                      <input type="text" class="form-control form-control-alternative" name="resultado" placeholder="Resultado" id="resultado" disabled>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <% include ../partials/footer %>
+
+    </div>
+  </div>
+
+  <% include ../partials/scripts %>
+
+  <script src="js/myia.js"></script>
+</body>

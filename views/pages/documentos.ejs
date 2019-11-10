@@ -1,0 +1,58 @@
+<body>
+
+  <% include ../partials/sidebar %>
+
+  <div class="main-content">
+
+    <% include ../partials/navbar %>
+    <% include ../partials/documentos/header %>
+
+    <div class="container-fluid mt--7">
+      <div class="row">
+          <div class="col-xl-12 order-xl-1">
+            <div class="card bg-secondary shadow">
+              <div class="card-header bg-white border-0">
+                <div class="row align-items-center">
+                  <div class="col-8">
+                    <h3 class="mb-0">Buscar</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="pl-lg-4">
+                  <div class="row">
+
+                    <div class="col-lg-6">
+                      <label class="form-control-label" for="valor">Valor</label>
+                      <input autocomplete="off" type="text" maxlength="200" class="form-control form-control-alternative" name="valor" placeholder="Valor" id="valor">
+                  </div>
+
+                    <div class="col-lg-6">
+                      <label class="form-control-label" for="nome">Nome</label>
+                      <input autocomplete="off" type="text" maxlength="15" class="form-control form-control-alternative" name="nome" placeholder="Nome" id="nome">
+                    </div>
+                      
+                    <div class="col-lg-12 mt-5">
+                        <label class="form-control-label" for="descricao">Descrição</label>
+                        <input autocomplete="off" type="text" maxlength="200" class="form-control form-control-alternative" name="descricao" placeholder="Descrição" id="descricao">
+                    </div>
+
+                    <div class="col-lg-12">
+                      <button class="btn btn-success btn-block mt-4 mb-4 fa fa-file-alt" id="analisar"> Analisar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <% include ../partials/footer %>
+
+    </div>
+  </div>
+
+  <% include ../partials/scripts %>
+
+  <script src="js/documentos.js"></script>
+</body>

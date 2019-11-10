@@ -1,0 +1,43 @@
+<% include ../partials/headerLogin %> 
+<body style="background-color: #999999;">
+	
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="login100-more" style="background-image: url('vendor/login/images/bg-01.jpg');"></div>
+    
+                <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+                    <form class="login100-form validate-form">
+                        <span class="login100-form-title p-b-59">
+                            AimCash - Login
+                        </span>
+    
+                        <div class="wrap-input100 validate-input" data-validate="Email não informado">
+                            <span class="label-input100">Email</span>
+                            <input class="input100" type="text" name="email" placeholder="Informe o Email">
+                            <span class="focus-input100"></span>
+                        </div>
+    
+                        <div class="wrap-input100 validate-input" data-validate = "Senha não informada">
+                            <span class="label-input100">Senha</span>
+                            <input class="input100" type="password" max name="pass" placeholder="*************">
+                            <span class="focus-input100"></span>
+                        </div>
+    
+                        <div class="container-login100-form-btn">
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <button type="submit" class="login100-form-btn">
+                                    Acessar
+                                </button>
+                            </div>
+    
+                            <a href="/registrar" class="dis-block txt3 hov1 p-r-30 p-t-29 p-b-10">
+                                Ainda não tem uma conta? Clique Aqui!
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>        
+        <% include ../partials/scriptsLogin %>    
+    </body>
