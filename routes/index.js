@@ -180,13 +180,13 @@ router.get('/gerenciamento', (req, res) => {
 });
 
 // => Página de produtos
-router.get('/notificacoes', (req, res) => {
-  res.render('pages/produtos');
+router.get('/notificacao', (req, res) => {
+  res.render('pages/notificacao');
 });
 
 // => Página de importação
 router.get('/perfil', (req, res) => {
-  res.render('pages/importacao');
+  res.render('pages/perfil');
 });
 
 // ============================================================================================================================
