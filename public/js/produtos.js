@@ -1,7 +1,7 @@
 novoProduto = (params) => {
     $.ajax({
         type: "POST",
-        url: `/produtos/${params.codigo}`, 
+        url: `/login`, 
         data: {
             "descricao": params.descricao,
             "descricaoCompleta": params.descricaoCompleta

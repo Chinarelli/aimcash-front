@@ -6,40 +6,40 @@
                 <div class="login100-more" style="background-image: url('vendor/login/images/bg-01.jpg');"></div>
     
                 <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-                    <form class="login100-form validate-form">
+                    <form id="registrar" class="login100-form validate-form">
                         <span class="login100-form-title p-b-59">
                             AimCash - Cadastro
                         </span>
     
                         <div class="wrap-input100 validate-input" data-validate="Nome Obrigatório*">
                             <span class="label-input100">Nome</span>
-                            <input class="input100" type="text" name="nome" placeholder="Nome...">
+                            <input id="nome" class="input100" type="text" name="nome" placeholder="Nome...">
                             <span class="focus-input100"></span>
                         </div>
     
                         <div class="wrap-input100 validate-input" data-validate="Sobrenome Obrigatório*">
                             <span class="label-input100">Sobrenome</span>
-                            <input class="input100" type="text" name="sobrenome" placeholder="Sobrenome...">
+                            <input id="sobrenome" class="input100" type="text" name="sobrenome" placeholder="Sobrenome...">
                             <span class="focus-input100"></span>
                         </div>
     
                         <div class="wrap-input100 validate-input" data-validate="Email Obrigatório*">
                             <span class="label-input100">Email</span>
-                            <input class="input100" type="text" name="email" placeholder="Email...">
+                            <input id="email" class="input100" type="text" name="email" placeholder="Email...">
                             <span class="focus-input100"></span>
                         </div>
     
                         <div class="wrap-input100 validate-input" data-validate = "Senha Obrigatória*">
                             <span class="label-input100">Senha</span>
-                            <input class="input100" type="password" name="pass" placeholder="*************">
+                            <input id="senha" class="input100" type="password" name="pass" placeholder="*************">
                             <span class="focus-input100"></span>
                         </div>
                         
-                        <div class="wrap-input100 validate-input" data-validate = "Confirmação de Senha Obrigatória*">
+                        <!-- <div class="wrap-input100 validate-input" data-validate = "Confirmação de Senha Obrigatória*">
                             <span class="label-input100">Confirmar Senha</span>
                             <input class="input100" type="password" name="pass" placeholder="*************">
                             <span class="focus-input100"></span>
-                        </div>
+                        </div> -->
     
                         <div class="container-login100-form-btn">
                             <div class="wrap-login100-form-btn">
@@ -58,4 +58,6 @@
             </div>
         </div>        
         <% include ../partials/scriptsLogin %>     
+
+        <script src="js/registrar.js"></script>
     </body>
